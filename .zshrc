@@ -9,3 +9,11 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+
+if [ $SPIN ]; then
+  alias jc="journalctl"
+  alias sc="systemctl"
+
+  PROMPT="😵‍💫 $PROMPT"
+fi
